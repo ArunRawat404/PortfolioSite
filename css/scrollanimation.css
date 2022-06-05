@@ -1,0 +1,41 @@
+#progressBarLeftUnder {
+	position: fixed;
+	display: inline-block;
+	background-color: var(--cyan);
+	width: 7.5px;
+	height: 100%;
+	left: 0px;
+	top: 8vh;
+	animation: animate 5s linear infinite;
+}
+
+#progressBarLeft {
+	position: fixed;
+	display: inline-block;
+	background-color: var(--main-bg-color);
+	z-index: 10;
+	width: 7.5px;
+	height: 100%;
+	left: 0px;
+	top: 8vh;
+}
+
+#progressBarRight {
+	position: fixed;
+	display: inline-block;
+	background-color: var(--cyan);
+	width: 7.5px;
+	height: 0%;
+	right: 0px;
+	top: 8vh;
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}

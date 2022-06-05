@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.line-box {
+	display: flex;
+	margin: 2.5vh auto;
+}
+
+.space {
+	display: flex;
+	width: 3vw;
+	height: auto;
+}
+
+.alpha {
+	color: var(--light-text-white);
+	font-size: 5rem;
+	font-family: "Almarai", sans-serif;
+	margin: 4px;
+}
+
+.alpha.animated {
+	color: var(--cyan);
+	animation: jiggle-animation 0.7s ease-in-out 1;
+}
+
+@keyframes jiggle-animation {
+	0% {
+		transform: scale(1.2, 0.8);
+	}
+	16% {
+		transform: scale(1.2, 0.8);
+	}
+	25% {
+		transform: scale(1.2, 0.8);
+	}
+	32% {
+		transform: scale(0.8, 1.1);
+	}
+	48% {
+		transform: scale(0.95, 1);
+	}
+	64% {
+		transform: scale(0.85, 1.2);
+	}
+	80% {
+		transform: scale(1.15, 1);
+	}
+	87% {
+		transform: scale(1.15, 1);
+	}
+	90% {
+		transform: scale(0.9, 1);
+	}
+	95% {
+		transform: scale(1.05, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes shrinkjump {
+	10%,
+	35% {
+		transform: scale(2, 0.2) translate(0, 0);
+	}
+
+	45%,
+	50% {
+		transform: scale(1) translate(0, -150px);
+	}
+
+	80% {
+		transform: scale(1) translate(0, 0);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.alpha {
+		font-size: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.alpha {
+		font-size: 2.6rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.alpha {
+		font-size: 3.1rem;
+	}
+}

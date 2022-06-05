@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap");
+
+.scene {
+	width: 15rem;
+	height: 15rem;
+	perspective: 30rem;
+	display: inline-block;
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
+
+.face {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	color: black;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.face img {
+	width: 100%;
+	height: 90%;
+}
+
+.front {
+	background-color: #b0dedf;
+	text-align: center;
+}
+
+.work-title {
+	color: inherit;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.back {
+	background-color: var(--cyan);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: rotateY(180deg);
+}
+
+.back p {
+	margin: 20px 0;
+}
+
+.back div {
+	width: 80%;
+	font-family: "Slabo 13px", serif;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.card-btn-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	bottom: 20px;
+	gap: 20px;
+}
+
+.eye-img-div img {
+	width: 10px;
+	height: 10px;
+}
+
+.card-btn {
+	width: 65px;
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: var(--main-bg-color);
+	background-color: var(--cyan);
+	border: 2px solid var(--main-bg-color);
+	border-radius: 10px;
+}
+
+.btn-div {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.card-btn:hover {
+	background-color: var(--white-black);
+
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.scene:hover .card {
+	transform: rotateY(180deg);
+}
+
+.scene:hover .anti {
+	transform: rotateY(-180deg);
+}
+
+@media only screen and (max-width: 600px) {
+	.scene {
+		width: 12.5rem;
+		height: 12.5rem;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.scene {
+		width: 12.5rem;
+		height: 12.5rem;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	.scene {
+		width: 12.5rem;
+		height: 12.5rem;
+	}
+}
