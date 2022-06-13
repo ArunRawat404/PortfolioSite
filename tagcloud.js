@@ -1,8 +1,8 @@
 // tag sphere animation
 
 const Texts = [
-    'HTML', 'CSS', 'JAVASCRIPT',
-    'REACT',
+    'HTML', 'CSS/SASS', 'JAVASCRIPT',
+    'TAILWIND',
     'PYTHON', 'SELENIUM',
     'NODEJS', 'MONGODB',
     'EXPRESS', 'WEB SCRAPING', 'JQUERY',
@@ -29,16 +29,5 @@ var tagCloud = TagCloud('.Sphere', Texts, {
 
 
 
-// addEventListener('resize', () => {
-//     if (window.innerWidth < 600) {
-//         tagCloud.radius = 100;
-//     }
-// })
 
 
-
-
-
-// Giving color to each text in sphere
-// var color = '#b0dedf';
-// document.querySelector('.skills-sphere').style.color = color;
